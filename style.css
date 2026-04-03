@@ -610,10 +610,11 @@ a { color: inherit; text-decoration: none; }
 .final-ft__footer {
   max-width: 1120px; margin: 0 auto;
   padding: 32px 24px 0;
-  display: flex; justify-content: space-between; align-items: center;
+  display: flex; flex-direction: column; gap: 20px;
 }
-.final-ft__contacts {
-  display: flex; gap: 24px;
+.final-ft__row {
+  display: flex; align-items: center; justify-content: center;
+  gap: 24px; flex-wrap: wrap;
 }
 .final-ft__link {
   display: inline-flex; align-items: center; gap: 6px;
@@ -624,15 +625,14 @@ a { color: inherit; text-decoration: none; }
 .final-ft__link:hover { color: #fff; }
 .final-ft__link svg { flex-shrink: 0; opacity: .7; }
 .final-ft__link:hover svg { opacity: 1; }
-.final-ft__legal {
-  display: flex; align-items: center; gap: 16px;
+.final-ft__copy {
   font-size: 12px; color: rgba(255,255,255,.3);
 }
-.final-ft__legal a {
-  color: rgba(255,255,255,.3);
+.final-ft__copy-link {
+  font-size: 12px; color: rgba(255,255,255,.3);
   transition: color .2s;
 }
-.final-ft__legal a:hover { color: rgba(255,255,255,.6); }
+.final-ft__copy-link:hover { color: rgba(255,255,255,.6); }
 
 /* ========================================
    MODAL
