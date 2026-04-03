@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function goTo(i) {
     if (!track || slides.length === 0) return;
     current = Math.max(0, Math.min(i, slides.length - 1));
-    const offset = slides[current].offsetLeft - track.offsetLeft;
-    track.style.transform = `translateX(-${offset}px)`;
+    track.style.transform = `translateX(-${current * 100}%)`;
     dots.forEach((d, idx) => d.classList.toggle('cases__dot--active', idx === current));
     if (prevBtn) prevBtn.disabled = current === 0;
     if (nextBtn) nextBtn.disabled = current === slides.length - 1;
