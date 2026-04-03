@@ -61,18 +61,14 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-mid);
   transition: color .2s;
 }
-.hd__phone svg { flex-shrink: 0; opacity: .5; }
+.hd__phone svg { flex-shrink: 0; color: var(--accent); opacity: 1; }
 .hd__phone:hover { color: var(--text); }
-.hd__phone:hover svg { opacity: .8; }
 .hd__tg {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 8px 16px;
-  background: var(--accent); color: #fff;
-  font-size: 13px; font-weight: 700;
-  border-radius: 8px;
-  transition: background .2s;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--text-mid);
+  transition: color .2s;
 }
-.hd__tg:hover { background: var(--accent-hover); }
+.hd__tg:hover { color: var(--text); }
 
 /* ========================================
    HERO
