@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /img/
+Sitemap: https://autokit.ru/sitemap.xml
+
+# Яндекс
+Host: https://autokit.ru
